@@ -1,0 +1,119 @@
+.hover-cards-container {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute space between cards */
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  /* Full-width container */
+  margin: auto;
+  flex-wrap: wrap;
+  /* Wrap cards to next row */
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  /* Adjust width for 3 cards per row */
+  height: 400px;
+  background-color: #0260a6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  background-color: transparent;
+}
+
+.card-content {
+  z-index: 2;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+font-weight: 500;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* Show only one line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 20px;
+  /* Adjust according to your text size */
+  transition: all 0.3s ease;
+  /* Smooth transition */
+  width: 60%;
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.card-content button {
+  padding: 15px 35px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.card-content button:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-image {
+  opacity: 1;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hover-cards-container {
+    flex-direction: column;
+  }
+
+  .hover-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

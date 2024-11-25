@@ -1,0 +1,111 @@
+/* General Styling */
+.portfolio-section {
+    background: linear-gradient(to bottom, #000000, #002244);
+    padding: 50px 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .portfolio-header {
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 0px 0px 10px 0px;
+    margin: 0;
+    text-align: center;
+    color: #0260a6;
+  }
+  
+  .portfolio-title {
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Flexbox Styling */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    width: 80%;
+    margin: auto;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 calc(33.33% - 20px); /* Each item takes 1/3 of the row minus gap */
+    max-width: calc(33.33% - 20px); /* Ensures proper width */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 350px; /* Fixed height for smaller boxes */
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box */
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Overlay Styling */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Plus Sign Styling */
+  .plus-sign {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .portfolio-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+      max-width: calc(50% - 20px);
+    }
+    .portfolio-grid{
+      width: 100%;
+    }
+    .portfolio-section {
+      padding: 50px 0px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-item {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row on mobile */
+      max-width: calc(100% - 20px);
+    }
+  }
+  

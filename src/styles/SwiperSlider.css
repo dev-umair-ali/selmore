@@ -1,0 +1,138 @@
+/* Swiper container dimensions */
+.mySwiper {
+  width: 100%;
+  height: 70vh;
+  /* Adjust as needed */
+  position: relative;
+  /* Added to ensure positioning of navigation buttons inside the container */
+}
+
+/* Align slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Ensure images fill the slide properly */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  /* Ensure image takes up the slide height */
+  object-fit: cover;
+}
+
+/* Custom navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #0260a6 !important;
+  /* Semi-transparent background */
+  color: #ffffff !important;
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50% !important;
+  position: absolute !important;
+  /* Position absolute to align relative to .mySwiper container */
+  top: 90% !important;
+  /* Vertically center within the container */
+  transform: translateY(-50%) !important;
+  /* Adjust for perfect centering */
+  z-index: 10 !important;
+  /* Ensure buttons are above other elements */
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Position previous button on the left side of the screen */
+.swiper-button-prev {
+  left: 45% !important;
+  /* Adjust to move closer/farther from the left edge */
+  bottom: 0 !important;
+}
+
+/* Position next button on the right side of the screen */
+.swiper-button-next {
+  right: 45% !important;
+  /* Adjust to move closer/farther from the right edge */
+}
+
+/* Hover effect for buttons */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Adjust arrow icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "<";
+  /* You can customize this with any symbol or icon */
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: white;
+  /* Ensures the arrow is visible */
+}
+
+.swiper-button-next::after {
+  content: ">";
+  /* You can customize this with any symbol or icon */
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: white;
+  /* Ensures the arrow is visible */
+}
+
+/* Tablet Responsive Media Query */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mySwiper {
+    height: 50vh; /* Adjust height for tablets */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px !important; /* Slightly smaller buttons */
+    height: 40px;
+    top: 92% !important; /* Adjust vertical position */
+  }
+
+  .swiper-button-prev {
+    left: 42% !important; /* Adjust horizontal position */
+  }
+
+  .swiper-button-next {
+    right: 42% !important; /* Adjust horizontal position */
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 16px !important; /* Slightly smaller arrow size */
+  }
+
+  .swiper-slide img {
+    object-fit: cover; /* Ensure image covers the slide area */
+  }
+}
+@media (max-width: 768px) {
+  .mySwiper {
+    width: 100%;
+    height: 40vh;
+    /* Adjust as needed */
+    position: relative;
+    /* Added to ensure positioning of navigation buttons inside the container */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}

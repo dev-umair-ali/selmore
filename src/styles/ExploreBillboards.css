@@ -1,0 +1,525 @@
+.explore-container {
+  min-height: 100vh; /* Ensure the container takes the full viewport height */
+  display: flex;     /* Use flexbox to stretch child elements */
+  flex-direction: column; /* Or row if you want them side-by-side */
+  padding: 50px;
+  width: 90%;
+  margin: -100px auto auto auto;
+}
+
+.explore-layout {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 25%;
+  flex-shrink: 0;
+  padding: 10px 20px;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.filter-header svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #007bc9;
+}
+
+.sidebar-scroll {
+height: 82%;
+  overflow-y: auto;
+}
+
+/* Sidebar Scrollbar Styles */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: #007bc9;
+  border-radius: 3px;
+}
+
+/* For Firefox */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #007bc9 transparent;
+}
+
+/* When hovering over the scrollbar */
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #007bc9;
+}
+
+.filter-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 10px 0px;
+}
+
+.filter-section h3 {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  font-family: "Lato", sans-serif;
+  padding: 10px 0px;
+}
+
+.for-border-b {
+  border-bottom: 1px solid white;
+  width: 80%;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-family: "Helvetica Neue", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #4b5563;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.show-more-filte {
+  font-size: 0.875rem;
+  color: #60a5fa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  height: fit-content;
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.search-input {
+  width: 91%;
+  height: 49px;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  padding: 0 1rem 0 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  font-family: "Lato", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}
+
+.search-button {
+  padding: 0 1rem;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+  width: 20%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+}
+
+.search-button:hover {
+  background-color: #3b82f6;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+/* Billboard Flexbox Layout */
+.billboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.billboard-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  /* min-width: 250px; */
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.billboard-image {
+  width: 100%;
+  height: 338px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.billboard-image:hover {
+  transform: scale(1.3);
+}
+
+.billboard-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+}
+
+.billboard-info h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  font-family: "Lato", sans-serif;
+}
+
+.billboard-info p {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #0b0b0b;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button svg {
+  color: #007bc9;
+}
+
+.billboard-card:hover .add-button {
+  opacity: 1;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.pagination svg {
+  color: #037ad7;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.page-button {
+  min-width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid white;
+}
+
+.page-button:hover {
+  background-color: #007bc9;
+  color: rgb(255, 255, 255);
+}
+
+.page-button:active {
+  background-color: #007bc9;
+}
+
+.page-button1 {
+  min-width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid white;
+}
+
+.page-button1:hover {
+  background-color: #d6d6d6;
+  color: black;
+}
+
+.page-button1:active {
+  background-color: #007bc9;
+  color: black;
+}
+
+/* top header bg  */
+.dotedline2 {
+  width: 80%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 220px 0px;
+  margin-top: -170px;
+  z-index: -1;
+}
+
+.dotedline2 img {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: -24%;
+  z-index: -1;
+}
+
+/* Mobile Filter Toggle Button */
+.mobile-filter-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.filter-align {
+  display: flex;
+  align-items: center;
+}
+.mobile-filter-toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #007bc9;
+}
+
+.filter-cancel-button {
+  display: none;
+}
+
+/* Tablet Responsive Media Query */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+  .explore-container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .explore-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: -3rem;
+  }
+
+  .sidebar-scroll {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 70%;
+  }
+
+  .search-button {
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .billboard-grid {
+    gap: 15px;
+  }
+
+  .billboard-card {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .billboard-image {
+    height: 300px;
+  }
+
+  .mobile-filter-toggle {
+    display: none;
+  }
+
+  .dotedline2 {
+    padding: 150px 0px;
+    margin-top: -100px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-cancel-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .explore-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    height: 100vh;
+    background-color: #03001424;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+    top: 90px;
+    background-color: black;
+  }
+
+  .sidebar-scroll {
+    height: calc(100vh - 60px);
+    padding-bottom: 60px;
+  }
+
+  .mobile-filter-toggle {
+    display: flex;
+    width: 28%;
+    position: absolute;
+    right: 17px;
+    padding: 12px;
+  }
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+  .search-input-wrapper {
+    width: fit-content;
+  }
+  .search-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .billboard-card {
+    flex: 1 1 100%;
+  }
+  .filter-sections {
+    background-color: black;
+  }
+  .explore-container {
+    width: 90%;
+    margin: 100px auto auto auto;
+    padding: 0;
+  }
+  .search-button {
+    display: none;
+  }
+  .billboard-image {
+    width: 100%;
+    height: 375px;
+  }
+  .dotedline2 {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 14px 0px;
+    margin-top: 0px;
+    z-index: -1;
+  }
+  .filter-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .pagination {
+    padding: 20px 0px;
+  }
+}

@@ -1,0 +1,381 @@
+.detail-content {
+  width: 71%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.detail-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 600px;
+}
+
+.detail-billboard-intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-top-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.product-top-btn button {
+  background-color: rgba(57, 88, 151, 1);
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.detail-billboard-intro p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0;
+}
+
+.detail-billboard-intro h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+
+}
+
+.product-loaction {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product-loaction svg {
+  font-size: 20px;
+  color: rgba(57, 88, 151, 1);
+}
+
+.product-loaction h3 {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.bottom-detail-main {
+  width: 70%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.71);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 10px;
+}
+
+.bottom-detail-main2 {
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid rgba(255, 255, 255, 0.71); */
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 0px;
+}
+
+.bottom-detail-main-left {
+  width: 50%;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 50px;
+}
+
+.bottom-left-inner1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-detail-main-right {
+  width: 50%;
+  padding-top: 25px;
+}
+
+.bottom-detail-main-right1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-detail-main-left {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0;
+  color: #395897;
+  padding-right: 50px;
+}
+
+.Features-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0;
+  color: #395897;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  font-family: "Lato", sans-serif;
+
+}
+
+.bottom-left-inner1 span {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.bottom-left-inner1 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.bottom-detail-main-right1 span {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.bottom-detail-main-right1 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.section-2bottom {
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.71);
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.Features-details {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.features-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px 0p;
+  padding-top: 30px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-right: 1px solid;
+  padding-right: 10px;
+  border-left: 1px solid;
+  padding-left: 10px;
+}
+.features svg {
+  font-size: 16px;
+  color: #395897;
+}
+
+.features p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.book-now-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.book-now-btn button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 35px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Existing styles remain unchanged */
+
+/* Tablet Responsive Media Query */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .detail-content {
+    width: 85%;
+    margin-top: 80px;
+  }
+
+  .detail-image img {
+    height: 400px;
+  }
+
+  .detail-billboard-intro p,
+  .detail-billboard-intro h1 {
+    font-size: 22px;
+  }
+
+  .product-top-btn button {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+
+  .bottom-detail-main,
+  .section-2bottom {
+    width: 85%;
+  }
+
+  .bottom-detail-main-left,
+  .bottom-detail-main-right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Features-details h3 {
+    padding-bottom: 30px;
+  }
+
+  .features-main {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .features p {
+    font-size: 14px;
+  }
+
+  .book-now-btn button {
+    padding: 10px 30px;
+  }
+}
+
+/* Existing mobile styles remain unchanged */
+@media (max-width: 768px) {
+  .detail-content {
+    width: 90%;
+
+    flex-direction: column-reverse;
+  }
+
+  .product-top-btn button {
+    color: white;
+    padding: 0px;
+
+    width: 32%;
+    height: 35px;
+  }
+
+  .detail-billboard-intro p {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .detail-billboard-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .detail-image img {
+    height: fit-content;
+  }
+
+  .bottom-detail-main-left {
+    padding-right: 0px;
+  }
+
+  .bottom-detail-main {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .bottom-detail-main-left {
+    border: none;
+    width: 100%;
+  }
+
+  .bottom-detail-main-right {
+    width: 100%;
+  }
+
+  .section-2bottom {
+    width: 90%;
+  }
+
+  .contact-us-home {
+    display: none;
+  }
+
+  .bottom-detail-main2 {
+    flex-direction: column;
+  }
+
+  .features-main {
+    display: block;
+  }
+
+  .bottom-left-inner1 {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .bottom-detail-main2 {
+    padding: 0;
+  }
+
+  /* .bottom-left-inner1 span {
+        display: none;
+    } */
+
+  .bottom-left-inner1 p {
+    margin-left: 50px;
+  }
+
+  .book-now-btn {
+    margin-bottom: 20px;
+  }
+  .Features-details h3 {
+    padding-bottom: 20px;
+  }
+  .Features-details {
+    padding: 0px 0px;
+  }
+}

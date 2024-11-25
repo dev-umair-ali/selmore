@@ -1,0 +1,146 @@
+.footer-container-selmore {
+  color: #ffffff;
+  padding: 20px 0px;
+  background: linear-gradient(to right, #092845, #0a3d6f);
+}
+
+.footer-content-selmore {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo-selmore {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+.footer-logo-selmore img {
+  max-width: 150px;
+}
+
+.footer-links-selmore,
+.footer-contact-selmore,
+.footer-subscribe-selmore {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-heading-selmore {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #6889ff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.footer-list-selmore {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-selmore li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.footer-list-selmore li:hover {
+  color: #6889ff;
+}
+
+.contact-icon {
+  color: #6889ff;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.subscribe-input-selmore {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #6889ff;
+}
+
+.subscribe-input-selmore input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-input-selmore input::placeholder {
+  color: #a0aec0;
+}
+
+.subscribe-input-selmore button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #6889ff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.subscribe-input-selmore button:hover {
+  color: #ffffff;
+}
+
+.social-icons-selmore {
+  margin-top: 15px;
+  display: flex;
+}
+
+.social-icons-selmore svg {
+  font-size: 20px;
+  color: #6889ff;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons-selmore svg:hover {
+  color: #ffffff;
+}
+
+.footer-copyright-selmore {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  color: #a0aec0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .footer-content-selmore {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-selmore,
+  .footer-contact-selmore,
+  .footer-subscribe-selmore {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .social-icons-selmore {
+    justify-content: center;
+  }
+  .footer-heading-selmore h4 {
+    margin: 0px;
+    padding: 0px;
+  }
+}

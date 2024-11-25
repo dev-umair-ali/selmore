@@ -1,0 +1,124 @@
+.accordion-main {
+    width: 80%;
+    margin: auto;
+    /* background-color: rgba(3, 151, 215, 0.13); */
+    padding: 60px 60px;
+    margin-top: -80px;
+    z-index: 999999;
+    border-radius: 10px;
+}
+
+.accordion-main-top {
+    position: relative;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1808mag-MuiPaper-root-MuiAccordion-root {
+    margin: 10px 0px !important;
+    background-color: transparent;
+    border: 1px solid rgba(104, 137, 255, 0.258) !important;
+    color: white !important;
+    padding: 5px 0px !important;
+    border-radius: 5px !important;
+
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-1umw9bq-MuiSvgIcon-root {
+    color: #037AD7;
+}
+
+.css-7iurs7-MuiAccordionSummary-content {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1pug5wj {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(104, 137, 255, 0.258) !important;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.fontSizeMedium.css-q7mezt {
+    color: #037AD7 !important;
+
+}
+
+.css-1lj39kh-MuiAccordionDetails-root {
+    padding: 8px 16px 16px;
+    font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.dotedline-accordion {
+    width: 100%;
+    height: auto;
+    /* background-image: url(../images/doted.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 190px 0px;
+    margin-top: -100px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.dotedline-accordion img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 90vh;
+}
+
+.css-7iurs7-MuiAccordionSummary-content {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.css-7iurs7-MuiAccordionSummary-content span {
+    color: #0260A6 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    padding: 0px 10px;
+}
+
+.css-1lj39kh-MuiAccordionDetails-root {
+    padding: 8px 62px 16px !important;
+}
+
+@media (max-width: 768px) {
+    .accordion-main {
+        width: 90%;
+        background-color: rgba(3, 151, 215, 0.13);
+        padding: 60px 10px;
+        margin-top: -80px auto auto auto;
+        z-index: 999999;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+
+    .css-7iurs7-MuiAccordionSummary-content {
+        font-family: 'Helvetica Neue', sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .home-we-provide h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+}

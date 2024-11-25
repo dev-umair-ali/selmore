@@ -1,0 +1,214 @@
+.booknow-container {
+  background-color: rgba(0, 0, 0, 0.758);
+  /* Blue color with opacity */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 50px auto;
+  backdrop-filter: blur(1px);
+  /* Adjust the blur intensity */
+  margin-top: 156px;
+}
+
+.booknow-title {
+  text-align: left;
+  color: #ccc;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.booknow-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booknow-section {
+  width: 48%;
+}
+
+.booknow-label {
+  display: block;
+  color: #345797;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.booknow-input,
+.booknow-select,
+.booknow-input-date,
+.booknow-textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.booknow-input:focus,
+.booknow-select:focus,
+.booknow-input-date:focus,
+.booknow-textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #345797;
+}
+
+.booknow-location-dropdowns {
+  display: flex;
+  gap: 10px;
+}
+
+.booknow-select {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.booknow-textarea {
+  height: 60px;
+  resize: none;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.booknow-submit {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+.booknow-submit:hover {
+  background-color: #0260a6;
+}
+
+.booknow-date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  color: white;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-family: "Helvetica Neue", sans-serif !important;
+}
+
+.dte-picker-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dotedline-booknow {
+  width: 100%;
+  /* Set height to auto to maintain the aspect ratio */
+  /* Update this path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Use "contain" to fit the entire image */
+  position: relative;
+  padding: 80px 0px;
+  margin-top: -170px;
+}
+
+.dotedline-booknow img {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  height: 90vh;
+  width: 100%;
+}
+.css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input {
+  font-size: 14px !important;
+}
+
+/* For tablets (screens smaller than 768px) */
+@media (max-width: 1080px) {
+  .booknow-container {
+    width: 90%;
+    margin-top: 100px;
+    padding: 15px;
+    background-color: transparent;
+  }
+
+  .booknow-title {
+    font-size: 20px;
+  }
+
+  .booknow-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .booknow-section {
+    width: 100%;
+  }
+
+  .booknow-location-dropdowns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .booknow-submit {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .dotedline-booknow img {
+    height: 60vh;
+  }
+}
+
+/* For mobile devices (screens smaller than 480px) */
+@media (max-width: 786px) {
+  .booknow-container {
+    width: 90%;
+    margin-top: 138px;
+    padding: 10px;
+  }
+  .booknow-title {
+    font-size: 18px;
+  }
+
+  .booknow-form {
+    gap: 15px;
+  }
+
+  .booknow-location-dropdowns {
+    gap: 10px;
+  }
+
+  .booknow-input,
+  .booknow-select,
+  .booknow-textarea {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .booknow-submit {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .dotedline-booknow img {
+    height: 50vh;
+  }
+}

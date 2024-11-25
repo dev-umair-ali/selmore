@@ -1,0 +1,298 @@
+.slider-container-marketing {
+  position: relative;
+  min-height: 400px;
+  width: 80%;
+  padding: 2rem 1rem;
+  margin: auto;
+}
+
+.slider-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.slides-wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  max-width: 450px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.slide.active {
+  z-index: 20;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.slide.next {
+  z-index: 10;
+  transform: translateX(30%) scale(0.85);
+  opacity: 0.7;
+}
+
+.slide.prev {
+  z-index: 10;
+  transform: translateX(-130%) scale(0.85);
+  opacity: 0.7;
+}
+.slide-content {
+  background: linear-gradient(to bottom, rgb(16, 16, 16), rgb(0 138 241));
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 230px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide-content h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.slide-content p {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.explore-button {
+  background-color: #0260a6;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: 1px solid #ffffff;
+  outline: none;
+}
+
+.explore-button:hover {
+  background-color: #1d4ed8;
+}
+
+.nav-button {
+  position: absolute;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #0260a6;
+  border: 1px solid rgba(255, 255, 255, 0.849);
+  padding: 0.5rem;
+  z-index: 30;
+  transition: background-color 0.2s;
+}
+
+.nav-button.prev {
+  left: calc(50% - 5rem);
+}
+
+.nav-button.next {
+  left: calc(50% + 5rem);
+}
+
+/* Container for the dots */
+/* Basic dot style */
+.dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between all dots */
+}
+
+.dot {
+  position: relative;
+  width: 10px !important; /* Base size for inactive dots */
+  height: 15px !important;
+  border-radius: 50%; /* Ensures perfect roundness */
+  background-color: #ffffff !important;
+  opacity: 0.4; /* Subtle transparency */
+  transition: all 0.3s ease-in-out;
+}
+
+.dot.active {
+  width: 12px; /* Larger size for active dot */
+  height: 12px;
+  background-color: rgb(
+    255,
+    255,
+    255
+  ) !important; /* Bright white for active dot */
+  opacity: 1; /* Fully visible */
+  border-radius: 50%; /* Maintains perfect roundness */
+  box-shadow: 0 0 10px rgba(2, 96, 166, 1); /* Glow effect for the active dot */
+}
+
+.dot.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px; /* Slightly smaller inner white circle */
+  height: 8px;
+  /* background-color: rgba(2, 96, 166, 1); */
+  border-radius: 50%; /* Inner circle is also perfectly round */
+  opacity: 1; /* Fully opaque */
+}
+
+.dot:not(.active):nth-child(n + 1):nth-child(-n + 2),
+.dot:not(.active):nth-last-child(n + 1):nth-last-child(-n + 2) {
+  width: 4px; /* Smaller size for outer dots */
+  height: 4px;
+  background-color: #fff !important; /* Darker grey for outer dots */
+  opacity: 0.3; /* More transparency for subtle fading effect */
+}
+/* Tablet Responsive Media Query */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .slider-container-marketing {
+    width: 90%;
+    padding: 2rem 0.5rem;
+    min-height: 350px;
+  }
+
+  .slider-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .slides-wrapper {
+    height: 280px;
+  }
+
+  .slide {
+    max-width: 400px;
+  }
+
+  .slide-content {
+    height: 210px;
+    padding: 1.25rem;
+  }
+
+  .slide-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .slide-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .explore-button {
+    padding: 10px 25px;
+    font-size: 0.8rem;
+  }
+
+  .nav-button {
+    bottom: 0.5rem;
+  }
+
+  .nav-button.prev {
+    left: calc(50% - 4rem);
+  }
+
+  .nav-button.next {
+    left: calc(50% + 4rem);
+  }
+
+  .dots {
+    bottom: 1.5rem;
+  }
+
+  .dot {
+    width: 8px !important;
+    height: 13px !important;
+  }
+
+  .dot.active {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dot.active::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .dot:not(.active):nth-child(n + 1):nth-child(-n + 2),
+  .dot:not(.active):nth-last-child(n + 1):nth-last-child(-n + 2) {
+    width: 3px;
+    height: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-container-marketing {
+    padding: 3rem 1.5rem;
+  }
+
+  .slider-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .slide {
+    max-width: 320px;
+  }
+
+  .slide-content h3 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .nav-button {
+    padding: 0.75rem;
+  }
+  .slider-container-marketing {
+    padding: 10px 0px;
+  }
+  .slider-container-marketing {
+    width: 100%;
+  }
+  .slider-container-marketing {
+    position: relative;
+    min-height: 314px;
+    width: 99%;
+    padding: 0rem 0rem;
+    margin: auto;
+  }
+  .slide-content {
+    padding: 0;
+  }
+  .what-wo-do {
+    text-align: center;
+    padding: 48px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    max-width: 500px;
+  }
+}

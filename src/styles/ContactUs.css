@@ -1,0 +1,262 @@
+.contact-us-main {
+    background-color: rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 50px 50px;
+    z-index: 999999;
+    /* height: 60vh; */
+    align-items: center;
+    margin: -100px auto auto auto;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+
+.contact-us-main-left {
+    width: 50%;
+}
+
+.contact-us-main-right {
+    padding: 20px 50px;
+    width: 50%;
+    /* margin-left: 60px; */
+}
+
+
+.contact-us-main-left h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.contact-us-main-right h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.contact-us-main-left p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.section-gapc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.section-gapc img {
+    width: 30px;
+    height: 30px;
+}
+
+.section-gapc2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0px;
+}
+
+
+.section-gapc2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.section-gapc3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.section-gapc3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-us-gap {
+    margin-top: 30px;
+}
+
+.contactus-main-from {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactus-main-from input {
+    width: 70%;
+    background-color: rgba(2, 96, 166, 0.23);
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 15px 10px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+
+}
+
+.contactus-main-from input textarea {
+    width: 100%;
+    background-color: rgba(2, 96, 166, 0.23);
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 15px 10px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.contact-us-main-right textarea {
+    background-color: rgba(2, 96, 166, 0.23);
+    width: 70%;
+    padding: 15px 10px;
+}
+
+.contactus-main-btn button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 35px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 73%;
+}
+
+.for-padding-contact {
+    padding: 50px 0px;
+}
+
+.map-show {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.map-main {
+    text-align: center;
+}
+
+.feature-Help,
+.section-gapc3 svg {
+    font-size: 20px;
+    color: rgb(2, 95, 166);
+    padding: 0;
+}
+/* Existing styles remain unchanged */
+
+/* Tablet Responsive Media Query */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-us-main {
+      width: 90%;
+      padding: 40px 30px;
+      margin-top: -80px;
+    }
+  
+    .contact-us-main-left,
+    .contact-us-main-right {
+      width: 48%;
+    }
+  
+    .contact-us-main-right {
+      padding: 20px 0;
+    }
+  
+    .contact-us-main-left h3,
+    .contact-us-main-right h3 {
+      font-size: 26px;
+    }
+  
+    .contact-us-main-left p {
+      font-size: 13px;
+    }
+  
+    .section-gapc,
+    .section-gapc2,
+    .section-gapc3 {
+      gap: 15px;
+    }
+  
+    .section-gapc img,
+    .section-gapc2 img,
+    .section-gapc3 img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .contactus-main-from input,
+    .contact-us-main-right textarea {
+      width: 85%;
+    }
+  
+    .contactus-main-btn button {
+      width: 88%;
+      padding: 10px 30px;
+    }
+  
+    .for-padding-contact {
+      padding: 40px 0px;
+    }
+  
+    .map-show {
+      margin-top: 60px;
+    }
+  }
+  
+  /* Existing mobile styles remain unchanged */
+@media (max-width: 768px) {
+    .contact-us-main {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: auto;
+        padding: 30px 15px;
+        margin-top: 10px;
+    }
+
+    .contact-us-main-left {
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px 0px;
+
+    }
+
+    .contact-us-main-right {
+        width: 100%;
+        margin-left: 0px;
+        padding: 20px 0px;
+    }
+
+
+
+    .contactus-main-from input {
+        width: 90%;
+    }
+
+    .contact-us-main-right textarea {
+        width: 90%
+    }
+
+    .contactus-main-btn button {
+        width: 95%;
+
+    }
+
+    .section-space {
+        width: 100%;
+    }
+}
