@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa";
 import mainlogo from "../images/new logo selmore 2 1.png";
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer-container-selmore">
@@ -19,10 +21,30 @@ const Footer = () => {
         <div className="footer-links-selmore">
           <h4 className="footer-heading-selmore">Navigate with Ease</h4>
           <ul className="footer-list-selmore">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+
+            <li>
+              {" "}
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/about-us">About Us</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/explore">Explore Billboards</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/faqs">FAQs</Link>
+            </li>
           </ul>
         </div>
 
@@ -37,8 +59,7 @@ const Footer = () => {
             </li>
             <li>
               <MdLocationOn className="contact-icon" />
-              Sunset Tower, Phase-2,
-              DHA, Karachi
+              Sunset Tower, Phase-2, DHA, Karachi
             </li>
           </ul>
         </div>
@@ -62,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright-selmore">
-        © {new Date().getFullYear()} Selmore. All rights reserved.
+        © {new Date().getFullYear()} Selmore  All rights reserved.
       </div>
     </footer>
   );

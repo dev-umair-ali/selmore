@@ -141,7 +141,7 @@
 
 .contactus-main-btn button {
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     border: 2px solid #6889FF;
     padding: 12px 35px;
     cursor: pointer;

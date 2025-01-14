@@ -179,8 +179,8 @@ function Home() {
           </div>
           <div className="bill-home-text">
             <h3>
-              “Our network of prime locations ensures your message reaches the
-              right audience”.
+              Our network of prime locations ensures your message reaches the
+              right audience.
             </h3>{" "}
             <br />
             <p>
