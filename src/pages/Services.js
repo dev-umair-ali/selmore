@@ -5,13 +5,14 @@ import servicesGrop from "../images/Group 154.png";
 import bgimg from "../images/Glow-1.png";
 import HoverCards from "../pages/HoverCards";
 import SwiperSlider from "../pages/SwiperSlider";
+import Marquee from "./Marquee";
 
 function Services() {
   return (
     <>
-      <div className="dotedline-accordion">
+      {/* <div className="dotedline-accordion">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="home-container-services">
         <div className="home-we-provide-services">
           <h3>OUR SERVICES</h3>
@@ -99,6 +100,7 @@ function Services() {
           </div>
         </div>
       </div>
+      <Marquee/>
     </>
   );
 }

@@ -38,14 +38,7 @@ const HoverCards = () => {
     },
     { id: 5, title: "BRANDING", description: "Lorem ipsum...", img: img5 },
     { id: 6, title: "BRANDING", description: "Lorem ipsum...", img: img6 },
-    {
-      id: 7,
-      title: "DIGITAL MARKETING",
-      description: "Lorem ipsum...",
-      img: img7,
-    },
-    { id: 8, title: "BRANDING", description: "Lorem ipsum...", img: img8 },
-    { id: 9, title: "BRANDING", description: "Lorem ipsum...", img: img9 },
+
   ];
 
   const scrollToTop = () => {

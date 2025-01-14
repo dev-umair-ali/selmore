@@ -15,6 +15,8 @@
   font-size: 50px;
   font-weight: 700;
   margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #475f9f;
 }
 
 /* Highlighted text color */
@@ -26,7 +28,7 @@
 .home-we-provide p {
   margin-top: 1rem;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.47);
+  color: rgb(255, 255, 255);
   width: 60%;
   margin: auto;
   font-family: "Helvetica Neue", sans-serif;
@@ -45,10 +47,32 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+
+
 .home-explore-button:hover {
-  background-color: #475f9f;
-  color: #fff;
+  background-color: #6889FF;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(104, 137, 255, 0.3);
 }
+
+.home-explore-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #6889FF;
+  padding: 12px 35px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: "Lato", sans-serif;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+
 
 .dotedline {
   width: 100%;
@@ -173,13 +197,39 @@
   font-family: "Lato", sans-serif;
   padding: 0px;
   margin: 0;
+  text-transform: capitalize;
+}
+.what-wo-do2 p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  padding: 0px;
+  margin: 0;
 }
 .what-wo-do {
   text-align: center;
+  background-color: #fff;
+  color: #000000;
+  padding-top: 40px;
+}
+.what-wo-do2 {
+  text-align: center;
+  padding-top: 10px;
 }
 .what-wo-do span {
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  padding: 0px;
+  margin: 0;
+  text-align: center;
+  color: #0260a6;
+}
+.what-wo-do2 span {
+  text-align: center;
+  font-size: 25px;
   font-weight: 400;
   font-family: "Lato", sans-serif;
   padding: 0px;
@@ -209,6 +259,7 @@
 
 .bill-home-text {
   width: 50%;
+  color: #092845;
 }
 
 .bill-home-text,
@@ -224,7 +275,7 @@
   font-weight: 400;
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
 }
 
 .arrow {
@@ -267,7 +318,6 @@
   background-position: center;
   background-size: cover;
   height: 500px;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,8 +326,8 @@
 
 .dontmiss h3 {
   text-align: center;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 600;
   font-family: "Lato", sans-serif;
   padding: 0px;
   margin: 0;
@@ -309,9 +359,9 @@
 }
 
 .section7-page1 {
-  /* background-color: #121212; */
-  padding: 50px 0px;
-  background-image: url(../images/Glow-1.png);
+  background-color: #000000;
+  padding: 15px 0px;
+  /* background-image: url(../images/Glow-1.png); */
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -412,7 +462,7 @@
   padding: 15px 0px;
   /* width: 50%; */
   margin: 0px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 251, 251);
 }
 
 .book-now {
@@ -438,9 +488,9 @@
 
 /* secton 8 */
 .section-map-main {
-  /* background-color: #0d0d1f; */
+  background-color: #ffffff;
   width: 100%;
-  background-image: url(../images/Glow-1.png);
+  /* background-image: url(../images/Glow-1.png); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -448,7 +498,7 @@
 
 .locations-container-map {
   /* background-color: #0d0d1f; */
-  color: #ffffff;
+  color: #000000;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
@@ -458,7 +508,7 @@
   font-size: 30px;
   font-family: "Lato", sans-serif;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -469,7 +519,7 @@
 }
 
 .stats-panel-map {
-  background-color: rgba(2, 96, 166, 0.3);
+  background-color: #092845;
   padding: 20px;
   width: 22%;
 }
@@ -487,7 +537,7 @@
 
 .stat-item-map p {
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #ffffff;
   font-family: "Helvetica Neue", sans-serif;
 }
 
@@ -648,7 +698,7 @@ textarea {
 
 .text-side {
   width: 50%;
-  background-color: rgba(104, 137, 255, 0.28);
+  background-color: #092845;
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -684,6 +734,9 @@ textarea {
   position: relative;
   width: 100%;
   margin: auto;
+}
+.for-color-chnage{
+  background-color: #fff;
 }
 .marketing-slider-main-img {
   position: absolute;
@@ -810,7 +863,7 @@ textarea {
 
 @media (max-width: 768px) {
   .home-we-provide p {
-    width: 100%;
+    width: 90%;
   }
   .logo-main {
     width: 90%;
@@ -853,7 +906,6 @@ textarea {
   }
   .stats-panel-map {
     width: 100%;
-    background-color: transparent;
   }
   .map-image-map {
     width: 100%;
@@ -866,5 +918,16 @@ textarea {
 
   .marketing-slider-main-img {
     display: none;
+  }
+  .section7-page1 {
+  
+   padding:35px 0px; 
+  }
+  .dontmiss h3 {
+font-size: 25px;
+
+  }
+  .what-wo-do2{
+    padding: 20px 0px;
   }
 }

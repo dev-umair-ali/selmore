@@ -9,7 +9,7 @@ import AddIcon from "@mui/icons-material/Add";
 function AccordionDetail() {
   return (
     <div>
-      <img src={bgimg} alt="bg" />
+      {/* <img src={bgimg} alt="bg" /> */}
       <div className="accordion-main">
         <Accordion>
           <AccordionSummary

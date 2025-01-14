@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "../styles/MarketingSlider.css";
@@ -128,19 +126,11 @@ export default function MarketingSlider() {
           return (
             <div
               key={index}
-              className={`slide ${
-                position === 0
-                  ? "active"
-                  : position === 1
-                  ? "next"
-                  : position === slides.length - 1
-                  ? "prev"
-                  : ""
-              }`}
+              className={`slide ${position === 0 ? "active" : position === 1 ? "next" : position === slides.length - 1 ? "prev" : ""}`}
             >
               <div className="slide-content">
-                <h3>{slide.title}</h3>
-                <p>{slide.description}</p>
+                <h3 className="slide-title">{slide.title}</h3>
+                <p className="slide-description">{slide.description}</p>
                 <button className="explore-button">Explore</button>
               </div>
             </div>

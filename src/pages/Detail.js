@@ -24,9 +24,9 @@ const Detail = () => {
 
   return (
     <div>
-      <div className="dotedline-accordion">
+      {/* <div className="dotedline-accordion">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="detail-content">
         <div className="detail-billboard-intro">
           <p>{product.description}</p>

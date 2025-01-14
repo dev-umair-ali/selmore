@@ -15,9 +15,9 @@ export default function FAQs() {
           <h3>FREQUENTLY ASKED QUESTIONS</h3>
         </div>
       </div>
-      <div className="dotedline-accordion">
+      {/* <div className="dotedline-accordion">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="accordion-main">
         <Accordion>
           <AccordionSummary

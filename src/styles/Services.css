@@ -13,11 +13,12 @@
   font-weight: 700;
   margin: 0;
   font-family: "Raleway", sans-serif;
+  color: #475f9f;
 }
 
 .home-we-provide-services p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.47) !important;
+  color: rgb(255, 255, 255) !important;
   width: 50%;
   margin: auto;
   font-family: "Helvetica Neue", sans-serif;
@@ -51,7 +52,7 @@
 }
 
 .services-offering-left p {
-  color: rgba(255, 255, 255, 0.47);
+  color: rgb(255, 255, 255);
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
   padding-top: 20px;
@@ -67,7 +68,7 @@
 }
 
 .services-offering-left-text {
-  color: rgba(255, 255, 255, 0.47);
+  color: rgb(255, 255, 255);
   margin: auto;
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
@@ -93,6 +94,20 @@
 .explore-work {
   margin-top: 50px;
 }
+
+/* Keyframes for gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Tablet Responsive Media Query */
 @media (min-width: 769px) and (max-width: 1024px) {
   .home-container-services {
@@ -151,20 +166,19 @@
     margin-top: 40px;
   }
   .hover-cards-container {
-  width: 90% !important;
-  justify-content: center !important;
-
+    width: 90% !important;
+    justify-content: center !important;
   }
   .card {
     width: 45% !important;
     height: 350px !important;
-}
+  }
 }
 @media (max-width: 768px) {
   .services-offering {
     flex-direction: column-reverse;
     width: 90%;
-    padding-top: 20px;
+padding: 20px 0px;
   }
 
   .services-offering-left {
@@ -185,10 +199,10 @@
   .services-offering-right img {
     width: 100%;
   }
-  .home-we-provide-services h3{
+  .home-we-provide-services h3 {
     font-size: 30px;
   }
   .services-offering-left h3 {
-  font-size: 20px;
+    font-size: 20px;
   }
 }

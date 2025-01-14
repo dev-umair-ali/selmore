@@ -13,6 +13,7 @@ import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
 import bgimg from "../images/Glow-1.png";
 import { MdCancel } from "react-icons/md";
 import PriceRangeSlider from "../pages/PriceRangeSlider"
+import Marquee from "./Marquee";
 const productImages = [
   product1,
   product2,
@@ -47,9 +48,9 @@ function ExploreBillboards() {
 
   return (
     <div>
-      <div className="dotedline2">
+      {/* <div className="dotedline2">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="explore-container">
         <div className="explore-layout">
           {/* Mobile Filter Toggle Button */}
@@ -274,6 +275,7 @@ function ExploreBillboards() {
           </div>
         </div>
       </div>
+      <Marquee/>
     </div>
   );
 }

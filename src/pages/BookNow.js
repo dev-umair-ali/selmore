@@ -10,9 +10,9 @@ import bgimg from "../images/Glow-1.png";
 const BookNow = () => {
   return (
     <div>
-        <div className="dotedline-booknow">
+        {/* <div className="dotedline-booknow">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="booknow-container ">
         <div className="booknow-form ">
           <div className="booknow-section ">

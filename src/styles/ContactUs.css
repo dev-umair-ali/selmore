@@ -1,5 +1,5 @@
 .contact-us-main {
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -31,6 +31,7 @@
     font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
     padding-top: 10px;
+    color: #000000;
 }
 
 .contact-us-main-right h3 {
@@ -40,6 +41,7 @@
     font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
     padding-top: 10px;
+    color: #000000;
 
 }
 
@@ -49,7 +51,7 @@
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
     padding: 10px 0px;
-    color: rgba(255, 255, 255, 0.75);
+    color: #000000;
 }
 
 .section-gapc {
@@ -107,7 +109,7 @@
     outline: none;
     padding: 15px 10px;
     font-family: "Raleway", sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -126,18 +128,35 @@
     background-color: rgba(2, 96, 166, 0.23);
     width: 70%;
     padding: 15px 10px;
+    color: #ffffff;
+}
+
+
+.contactus-main-btn button:hover {
+    background-color: #6889FF;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(104, 137, 255, 0.3);
 }
 
 .contactus-main-btn button {
     background-color: transparent;
     color: white;
-    border: 1px solid white;
+    border: 2px solid #6889FF;
     padding: 12px 35px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
+    font-family: "Lato", sans-serif;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
     width: 73%;
+
 }
+
+
 
 .for-padding-contact {
     padding: 50px 0px;

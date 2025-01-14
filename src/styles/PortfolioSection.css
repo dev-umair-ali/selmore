@@ -1,8 +1,8 @@
 /* General Styling */
 .portfolio-section {
-    background: linear-gradient(to bottom, #000000, #002244);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     padding: 50px 20px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
@@ -13,7 +13,7 @@
   
   .portfolio-subtitle {
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
     font-family: "Helvetica Neue", sans-serif;
     padding: 0px 0px 10px 0px;
@@ -25,7 +25,7 @@
   .portfolio-title {
     font-size: 30px;
     font-family: "Lato", sans-serif;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     text-transform: uppercase;
   }
@@ -84,7 +84,7 @@
   .plus-sign {
     font-size: 40px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   }
   

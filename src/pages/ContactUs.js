@@ -15,9 +15,9 @@ function ContactUs() {
           <h3>CONTACT US</h3>
         </div>
       </div>
-      <div className="dotedline-accordion">
+      {/* <div className="dotedline-accordion">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       {/* section1 */}
       <div className="contact-us-main">
         <div className="contact-us-main-left">

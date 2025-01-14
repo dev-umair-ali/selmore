@@ -15,9 +15,9 @@ const ServiceDetail = () => {
 
   return (
     <>
-      <div className="dotedline-accordion-detail">
+      {/* <div className="dotedline-accordion-detail">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="service-detail-main-text">
         <h3>{card.title}</h3>
       </div>

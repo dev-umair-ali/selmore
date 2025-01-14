@@ -23,11 +23,7 @@ import brnad5 from "../images/brand-logo (5).png";
 import brnad6 from "../images/brand-logo (6).png";
 import MarketingSlider from "../pages/MarketingSlider";
 import services from "../images/SERVICES.png";
-import PortfolioSection from "../pages/PortfolioSection"
-
-
-
-
+import PortfolioSection from "../pages/PortfolioSection";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -79,9 +75,9 @@ function Home() {
   // ];
   return (
     <div>
-      <div className="dotedline">
+      {/* <div className="dotedline">
         <img src={bgimg} alt="" />
-      </div>
+      </div> */}
       <div className="home-container">
         <div className="home-we-provide">
           <h3>
@@ -130,7 +126,7 @@ function Home() {
         <div className="marketing-slider-main-img">
           <img src={services} alt="" />
         </div>
-        <div className="what-wo-do">
+        <div className="what-wo-do2">
           <span>WHAT WE DO</span>
           <p>OUR EXPERT SERVICES</p>
         </div>
@@ -176,37 +172,38 @@ function Home() {
         <span>WHO WE ARE</span>
         <p>passionate about your growth</p>
       </div>
-
-      <div className="about-us-billboard">
-        <div className="bill-home-img">
-          <img src={billboard} alt="" />
-        </div>
-        <div className="bill-home-text">
-          <h3>
-            “Our network of prime locations ensures your message reaches the
-            right audience”.
-          </h3>{" "}
-          <br />
-          <p>
-            At Selmore we are passionate about helping businesses *stand out
-            with impactful outdoor advertising. Our strategically placed
-            billboards in high-traffic locations —from busy highways to vibrant
-            city centers —ensure your brand gets the visibility it deserves.
-          </p>
-          <br />
-          <p>
-            Whether you need static, digital, or transit ads, we provide
-            customized solutions that align with your marketing goals. With
-            years of experience in the industry, we understand the importance of
-            targeting the right audience at the right place and time, maximizing
-            your return on investment.{" "}
-          </p>
-          <h3 className="arrow">
-            Start Your Campaign Now <MdOutlineArrowRightAlt />
-          </h3>
+      <div className="for-color-chnage">
+        <div className="about-us-billboard">
+          <div className="bill-home-img">
+            <img src={billboard} alt="" />
+          </div>
+          <div className="bill-home-text">
+            <h3>
+              “Our network of prime locations ensures your message reaches the
+              right audience”.
+            </h3>{" "}
+            <br />
+            <p>
+              At Selmore we are passionate about helping businesses *stand out
+              with impactful outdoor advertising. Our strategically placed
+              billboards in high-traffic locations —from busy highways to
+              vibrant city centers —ensure your brand gets the visibility it
+              deserves.
+            </p>
+            <br />
+            <p>
+              Whether you need static, digital, or transit ads, we provide
+              customized solutions that align with your marketing goals. With
+              years of experience in the industry, we understand the importance
+              of targeting the right audience at the right place and time,
+              maximizing your return on investment.{" "}
+            </p>
+            <h3 className="arrow">
+              Start Your Campaign Now <MdOutlineArrowRightAlt />
+            </h3>
+          </div>
         </div>
       </div>
-
       {/* section 5 */}
       {/* <div className="about-us-billboard2">
         <div className="bill-home-img2">
@@ -372,7 +369,7 @@ function Home() {
         </div>
       </div>
       <div className="">
-        <PortfolioSection/>
+        <PortfolioSection />
       </div>
     </div>
   );

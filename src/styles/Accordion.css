@@ -1,7 +1,7 @@
 .accordion-main {
     width: 80%;
     margin: auto;
-    /* background-color: rgba(3, 151, 215, 0.13); */
+    background-color: rgb(255, 255, 255);
     padding: 60px 60px;
     margin-top: -80px;
     z-index: 999999;
@@ -15,15 +15,15 @@
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1808mag-MuiPaper-root-MuiAccordion-root {
     margin: 10px 0px !important;
     background-color: transparent;
-    border: 1px solid rgba(104, 137, 255, 0.258) !important;
-    color: white !important;
+    border: 1px solid #092845 !important;
+    color: rgb(0, 0, 0) !important;
     padding: 5px 0px !important;
     border-radius: 5px !important;
 
 }
 
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-1umw9bq-MuiSvgIcon-root {
-    color: #037AD7;
+    color: #092845;
 }
 
 .css-7iurs7-MuiAccordionSummary-content {
@@ -37,7 +37,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-1umw9bq-MuiSvgIcon-root {
     margin-top: 10px;
     background-color: transparent;
     border: 1px solid rgba(104, 137, 255, 0.258) !important;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Helvetica Neue', sans-serif !important;
     font-size: 16px !important;
     font-weight: 500 !important;
