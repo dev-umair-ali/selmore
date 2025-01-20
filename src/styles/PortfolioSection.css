@@ -1,111 +1,451 @@
-/* General Styling */
 .portfolio-section {
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
-    padding: 50px 20px;
-    color: #000000;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .portfolio-header {
-    margin-bottom: 40px;
-  }
-  
-  .portfolio-subtitle {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: "Helvetica Neue", sans-serif;
-    padding: 0px 0px 10px 0px;
-    margin: 0;
-    text-align: center;
-    color: #0260a6;
-  }
-  
-  .portfolio-title {
-    font-size: 30px;
-    font-family: "Lato", sans-serif;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  /* Flexbox Styling */
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+  padding: 50px 20px;
+  color: #000000;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.portfolio-header {
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-subtitle {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 0 0 10px 0;
+  margin: 0;
+  color: #0260a6;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+}
+
+.portfolio-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 350px;
+  background: #fff;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 96, 166, 0.7);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.plus-sign {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.item-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.item-details h3 {
+  margin: 0 0 5px 0;
+  color: #0260a6;
+  font-size: 18px;
+}
+
+.item-details p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.portfolio-item:hover .item-details {
+  transform: translateY(0);
+}
+
+.navigation-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button2 {
+  padding: 12px 36px;
+  background: linear-gradient(90deg, #032c4b, #092845);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 10%;
+}
+
+.nav-button2:hover {
+  background: linear-gradient(90deg, #024884, #0260a6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.nav-button2:hover:before {
+  left: 150%;
+}
+
+.nav-button2 span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button2 .icon {
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  z-index: 9999;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 1px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 2;
+}
+.popup-image-slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popup-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(2, 96, 166, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+  background: rgba(2, 96, 166, 0.9);
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.image-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* .popup-details {
+  padding: 20px 0;
+} */
+
+.popup-details h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #0260a6;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.info-item {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  will-change: transform, background-color, box-shadow; /* Optimize for GPU rendering */
+}
+
+.close-button:hover {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Darker red for the "X" */
+  transform: scale(1.1); /* Slight scaling */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.close-button:focus {
+  outline: none;
+  box-shadow: 0px 0px 12px rgba(114, 28, 36, 0.5); /* Red focus outline */
+}
+
+/* "X" icon using pseudo-elements */
+.close-button::before, 
+.close-button::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 2px;
+  will-change: transform; /* Optimize for smoother animation */
+}
+
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
+
+.close-button:hover::before {
+  transform: rotate(135deg); /* Slight rotation for animation */
+}
+
+.close-button:hover::after {
+  transform: rotate(-135deg); /* Slight rotation for animation */
+}
+
+@media (max-width: 1024px) {
   .portfolio-grid {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
-    width: 80%;
-    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
   }
-  
-  .portfolio-item {
-    flex: 1 1 calc(33.33% - 20px); /* Each item takes 1/3 of the row minus gap */
-    max-width: calc(33.33% - 20px); /* Ensures proper width */
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    height: 350px; /* Fixed height for smaller boxes */
+
+  .portfolio-description {
+    font-size: 16px;
   }
-  
-  .portfolio-item img {
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures image fills the box */
-    transition: transform 0.3s ease;
   }
-  
-  .portfolio-item:hover img {
-    transform: scale(1.1);
+
+  .portfolio-section {
+    padding: 30px 15px;
   }
-  
-  /* Overlay Styling */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
+
+  .portfolio-title {
+    font-size: 28px;
   }
-  
-  .portfolio-item:hover .overlay {
-    opacity: 1;
+
+  .portfolio-subtitle {
+    font-size: 20px;
   }
-  
-  /* Plus Sign Styling */
-  .plus-sign {
-    font-size: 40px;
-    font-weight: bold;
-    color: #000000;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+
+  .popup-content {
+    padding: 20px;
+    width: 95%;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .portfolio-item {
-      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
-      max-width: calc(50% - 20px);
-    }
-    .portfolio-grid{
-      width: 100%;
-    }
-    .portfolio-section {
-      padding: 50px 0px;
-    }
+
+  .popup-image {
+    height: 300px;
   }
-  
-  @media (max-width: 768px) {
-    .portfolio-item {
-      flex: 1 1 calc(100% - 20px); /* 1 item per row on mobile */
-      max-width: calc(100% - 20px);
-    }
+
+  .slider-button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .popup-image {
+    height: 250px;
+  }
+
+  .slider-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .portfolio-description {
+    font-size: 14px;
+  }
+
+  .nav-button2 {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 40%;
+  }
+}
+
